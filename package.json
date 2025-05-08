@@ -1,0 +1,17 @@
+{
+  "name": "jobsearch-app",
+  "version": "1.0.0",
+  "description": "Job search application with Next.js and Express",
+  "main": "index.js",
+  "scripts": {
+    "dev:frontend": "cd src && npm run dev",
+    "dev:backend": "cd src/server && npm run dev",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "cd src && npm run build",
+    "start": "cd src && npm start",
+    "install:all": "npm install && cd src && npm install && cd ../src/server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
